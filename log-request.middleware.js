@@ -15,6 +15,7 @@ module.exports = function logRequest(req, res, next) {
   // Basic route information
   var log = {
     path: req.path,
+    routePath: req.route.path,
     method: req.method,
     target: {
       action: req.options.action,
